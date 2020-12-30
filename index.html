@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-8">
+            <div class="form-group">
+                <div id="quiz-container">
+                    <div id="quiz">
+                        <div id="question"></div>
+                        <hr>
+                        <div id="answers1">
+                           <ul class="list-group" id="answers" style="list-style-type: none;"></ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4"></div>
+                        <div class="col-xs-6">
+                            <div class="btn-group">
+                                <button class="btn btn-primary btn-lg" id="previous" onClick="previousQuestion()">Previous</button>
+                                <button class="btn btn-primary btn-lg" id="next" onClick="nextQuestion()">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>    
+    <div class="row" id="startDiv">
+        
+        <div class="col-xs-12">
+            <h1>Welcome to my quiz</h1>
+            <p>When you are ready, press the start button</p>
+        </div>
+        <div class="col-xs-5"></div>
+        <div class="col-xs-6">
+            <div>
+                <button class="btn btn-success btn-lg" id='start' onClick="startQuiz()">START</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4"></div>
+        <div class="col-xs-4">
+            <div id='scoreForm'></div>
+
+            <div id='score'></div>
+
+            <div id='scoreList'></div>
+        </div>
+    </div>
+</div>
+    
+    
+    
+  
+  
+
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
